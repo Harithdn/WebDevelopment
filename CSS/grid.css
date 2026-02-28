@@ -1,0 +1,36 @@
+.container{
+    height: 300px;
+    width: 600px;
+    background-color: yellow;
+    display:grid;
+    /* grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    grid-template-columns: 200px 200px 200px; */
+    grid-template-rows: repeat(3,1fr);   /* or 1fr 1fr 1fr 1fr 1fr */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* row-gap: 10px;
+    column-gap: 30px; */
+     grid-gap:10px 30px; /*shorthand for specifying both row and column gaps*/
+    grid-gap:10px; /* shorthand for specifying equal gaps for both row and column*/
+    justify-items: center;
+    align-items: center;
+
+}
+/* #one{
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    /* grid-column: 1/3; Shorthand for grid column start and end 
+    grid-column: 1/ span 3; /*It tells the starting line and the number of cells that is required
+} */
+/* #two{
+    /* grid-row-start: 1;
+    grid-row-end: 3;
+    grid-row: 1/3; 
+    grid-row: 1/span 2;
+} */
+.item{
+    width: 100px;
+    height: 50px;  /*If height and width of elements are not specified,they are arranged based on the cells in the grid*/
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}

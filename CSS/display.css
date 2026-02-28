@@ -1,0 +1,12 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    margin: 10px;
+    border: 2px solid black;
+    /* display: inline; for inline elements the properties such as height width doesnt apply,margins only apply for left and right */
+     display: inline-block; /*this comm makes block elements display in inline fashion preserving properties of the block elements such as height width margins */
+}
+#div3{
+     display: none; /*will display nothing */
+}

@@ -1,0 +1,29 @@
+#container{
+    height: 350px;
+    width: 700px;
+    border: 2px solid black;
+    margin: 0 auto;
+    display: flex;
+    flex-direction:column-reverse;/* row,row-reverse,column,column-reverse*/
+    /* justify-content:space-between; flex start, flex end, center, space-around, space-between, space-evenly */
+     flex-wrap: wrap; 
+    /* align-items: baseline; aligns items based on the baseline commonn to all the content in the divs */
+    align-content:baseline;
+}
+h1{
+    text-align: center;
+}
+#blue{
+    flex-grow: 3;
+    max-height: 100px;
+}
+#orange{
+    flex-grow: 1;
+}
+#container div{
+    height:25px;
+    width: 200px;
+    text-align: center;
+    color: black;
+    font-size: 2em;
+}

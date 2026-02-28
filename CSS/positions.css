@@ -1,0 +1,36 @@
+div{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: green;
+    border: 3px solid black;
+    margin: 20px;
+    display: inline-block;
+}
+#static{
+    position: static;
+    background-color: greenyellow;
+    left: 100px;
+    top: 100px;
+    /* As the position is static, there wont be any changes in the position of the image even if we specify left and top */
+}
+#relative{
+    position: relative;
+    left: 100px;/*left offset its like pushing it from the left by a force*/
+    bottom: 100px;
+   /*top offset its like pushing it from the top*/
+    background-color: greenyellow;
+}
+#absolute{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    /* if position is absolute the position will be with respect to the entire body of the html,so no new space is allocated at the place of writing absolute */
+}
+#fixed{
+     position: fixed;
+    left: 100px;
+    top: 100px;
+    /* Fixed position is used when a block has to be on the screen always,like the navugation bar on websites */
+
+}

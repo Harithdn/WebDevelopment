@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    gap: 20px;
+}
+
+.card{
+    /* height: 350px;
+    width: 350px; */
+    border: 2px solid black;
+    box-shadow: 2px 2px 10px black;
+    margin: 50px;
+    transition: 2s;
+}
+.card:hover{
+    box-shadow: 10px 10px 50px black;
+}
+.img{
+    height: 350px;
+    width: 350px;
+}
+
+
+
+img{
+    width: 100%;
+}
+

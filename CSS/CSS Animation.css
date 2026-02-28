@@ -1,0 +1,46 @@
+#box{
+    height: 100px;
+    width: 300px;
+     background-color: hotpink;
+    /* animation-name: widthAnimate;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-direction:alternate-reverse/normal/alternate; */
+    /*Animation shorthand*/
+    animation: colAnimate 2 6s normal;
+
+}
+/* Diffrent animation templates*/
+@keyframes fontAnimate{
+    from{ font-size: 20px;}
+    to{font-size: 40px;}
+}
+@keyframes bgcolorAnimate{
+    from{ background-color: green;}
+    to{background-color: red;}
+}
+@keyframes widthAnimate{
+    from{ 
+        width: 300px;
+        background-color: hotpink;
+    }
+    to{
+        width: 100px;
+        background-color: pink;
+    }
+
+}
+@keyframes colAnimate{
+    0%{
+        background-color: red;
+    }
+    33.33%{
+        background-color: green;
+    }
+    66.66%{
+        background-color: blue;
+    }
+    100%{
+        background-color: white;
+    }
+}

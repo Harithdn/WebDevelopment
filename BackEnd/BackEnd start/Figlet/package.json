@@ -1,0 +1,22 @@
+{
+  "name": "figlet",
+  "version": "1.0.0",
+  "description": "first json package",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "Harith"
+  },
+  "license": "ISC",
+  "author": "D N Harith",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "figlet": "^1.10.0",
+    "give-me-a-joke": "^0.5.1"
+  },
+  "devDependencies": {}
+}

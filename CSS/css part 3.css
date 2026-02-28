@@ -1,0 +1,49 @@
+div{
+    height: 200px;
+    width:500px;
+    background-color: burlywood;
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: black; */
+    border:5px solid black;
+    /* border-left:5px solid red;
+    border-top-style:dotted;
+    border-bottom-color:darkred; */
+    border-radius:15px;
+    /* padding-top: 20px;
+    padding-bottom: 20px;*/
+    padding: 20px 10px 30px 15px; /*padding for top right bottom left (clockwise order)*/
+    /* if no paddinf reqd set it to 0px */
+     margin: 10px 20px 10px 20px;  /*margin top right bottom left (clockwise order) */
+} 
+h1{
+    border-width: 5px;
+    border-style: double;
+    border-color: rgb(255, 0, 0);
+    text-align: center;
+    /* padding-bottom: 10px;
+    padding-top: 10px; */
+    padding: 20px; /*padding for all top,bottom,left and right */
+} 
+button{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: yellow;
+    border-radius: 25px;
+}
+#div1{
+    height: 200px;
+    width: 70px;
+    background-color: white;
+    /* border-style: solid;
+    border-color: black;
+    border-width: 2px; */
+    border:2px solid black;
+}
+.inner{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 50%;
+}

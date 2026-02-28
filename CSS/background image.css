@@ -1,0 +1,9 @@
+div{
+    height: 400px;
+    width: 600px;
+    background-color: green;
+    margin: 50px auto;
+    background-image: url("image.jpg");
+    border: 2px solid black;
+    background-size: cover;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <form action="/action">
+
+         <div>
+        <label for="username">username</label>
+        <input type="text" placeholder="enter username" id="username">
+         </div>
+        
+       
+        <br>
+        Password
+        <input type="password" placeholder="enter password">
+        <br>
+        Number
+        <input type="number">
+        <br>
+        Timee
+        <input type="time">
+        <br>
+        Date
+        <input type="date">
+        <br>
+        Color
+        <input type="color">
+        <br>
+        <button>Submit</button>
+        <!-- as default any button in the form will submit the form,needless to describe it -->
+         <!-- to specifically program the functionality to submit the form,specify button type as "submit" -->
+        <button type="reset">reset</button>
+        <input type="button" value="click me">
+        <input type="submit" value="submittt">
+    </form>
+    <hr>
+    <form action="https://www.youtube.com/results?">
+        <input type="text" placeholder="search in youtube" name="search_query">
+        <button>Search</button>
+    </form>
+    <hr>
+    <form action="https://www.google.com/search?">
+        <input type="text" name="q" placeholder="search in google">
+        <button>Search</button>
+
+    </form>
+    <hr>
+    <form action="action/">
+        <input type="checkbox" name="age" id="age">
+        <label for="age">I am 18+</label>
+        <button>submit</button>
+    </form>
+    <hr>
+    <form>
+        Enter Fruit:
+         <input type="radio" name="fruits" id="mango" value="mango">
+         <label for="mango">mango</label>
+         <input type="radio" name="fruits" id="apple" value="apple">
+         <label for="apple">apple</label>
+         <input type="radio" name="fruits" id="banana" value="banana">
+         <label for="banana">banana</label>
+         <button>Submit</button>
+
+    </form>
+    <hr>
+    <form action="/action">
+        Select the subjects:
+        <input type="checkbox" name="subject" id="math" value="mat">
+        <label for="math">Math</label>
+        <input type="checkbox" name="subject" id="science" value="sci">
+        <label for="science">science</label>
+        <input type="checkbox" name="subject" id="english" value="eng">
+        <label for="english">english</label>
+        <button>Submit</button>
+        <div>
+            <select name="profession" value="profession">
+                <option>Select your profession</option>
+                <option value="student" selected>student</option>
+                <option value="dev">developer</option>
+            </select>
+        </div>
+        <div>
+            <label for="vol">select volume level</label>
+            <input type="range" min="0" max="100" step="10" id="vol" name="volume">
+        </div>
+        <div>
+            <label for="feedback">Enter your feedback</label>
+            <textarea name="feeback" id="feedback" placeholder="your feedback here" rows="10" cols="100"></textarea>
+        </div>
+        <button>submit</button>
+
+
+    </form>
+    <hr>
+    <div>
+        <h1>Registration Form</h1>
+    <form action="/action">
+          <input type="text" placeholder="First Name" name="Firstname">
+            <input type="text" placeholder="Last Name" name="Lastname">
+
+        </div>
+        <div>
+            <label for="gender">Enter your gender</label>
+            <select name="gender" id="gender" value="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+
+            </select>
+
+        </div>
+        <div>
+            <label for="terms">Do you agree to all terms of service?</label>
+            <input type="checkbox" name="terms" id="terms">
+            Yes I agree
+        </div>
+        <div>
+            <button>Register</button>
+        </div>
+
+        
+    </form>
+    <hr>
+    <form action="/action">
+        <label for="name">Name:</label>
+        <input type="text" placeholder="enter name">
+        <br>
+        Gender:
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+
+    </form>
+    </div>
+   
+</body>
+</html>

@@ -21,7 +21,19 @@ res.render("home.ejs");//in normal requests we could send some text or some part
 
 app.get("/rolldice",(req,res)=>{
     let diceval=Math.floor(Math.random()*6)+1;
-    res.render("rolldice.ejs",{diceval});
+    res.render("rolldice.ejs",{diceval: diceval});
+})
+
+app.get("/instagram/:username",(req,res)=>{
+    let { username}=req.params;
+    app.use(express.static(path.join(__dirname,"public/js")));
+    app.use(express.static(path.join(__dirname,"public/css")));
+    let instadata=require("./data.json");
+    let data=instadata[username];
+    if(data)
+    res.render("instagram.ejs",{data});
+    else
+        res.render("error.ejs");
 })
 
 // app.get("/home",(req,res)=>{

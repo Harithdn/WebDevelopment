@@ -13,7 +13,7 @@
 //     });
 // });
 
-//Rewriting the function using promises to avoid callback hell
+// Rewriting the function using promises to avoid callback hell
 
 // function changecolor(color,delay)
 // {
@@ -51,7 +51,7 @@
 //     console.log("error:",error);
 // })
 
-//callbacks nesting- leads to callback hell
+// callbacks nesting- leads to callback hell
 
 // function savetodb(data)
 // {
@@ -71,8 +71,8 @@
 
 // }
 
-//Making the function even better by making promises and awaits
-//await keyword halts the execution of other async functions until the current specified function's promise is fulfilled(execution is complete)
+// Making the function even better by making promises and awaits
+// await keyword halts the execution of other async functions until the current specified function's promise is fulfilled(execution is complete)
 // async function demo(){
 //    await changecolor("red",1000);
 //      await changecolor("orange",1000);
@@ -125,7 +125,7 @@
 
 // console.log(JSON.parse(jsondata));
 
-//Calling API
+// Calling API
 // let url="https://catfact.ninja/fact";
 
 // fetch(url)
@@ -146,7 +146,7 @@
 // })
 // console.log("API calls ahppen asynchronously ,and hence this statement gets executed first");
 
-//Using async and await with fetch to call API's
+// Using async and await with fetch to call API's
 // async function apicalls()
 // {
 //     let res= await fetch(url);
@@ -160,8 +160,8 @@
 //     console.log("hii");//here this statement gets executed at the last after the api calls,bcoz of await command
 // }
 
-//API calls using axios
-//Cat facts random facts api
+// API calls using axios
+// Cat facts random facts api
 // async function getFacts()
 // {
 //     let res= await axios.get(url);//using axios,we can directly get data in js object format,rather than getting it in json and converting to js obj later
@@ -175,7 +175,7 @@
 
 // })
 
-//random dog pictures api
+// random dog pictures api
 // let url2="https://dog.ceo/api/breeds/image/random";
 // async function getImage()
 // {
@@ -199,7 +199,7 @@
 //     img.src= await getImage();
 // });
 
-//generate random jokes using api call specifying headers
+// generate random jokes using api call specifying headers
 // let url3="https://icanhazdadjoke.com/";
 // async function getJokes()
 // {
@@ -214,32 +214,32 @@
     
 // }
 
-//Generate list of universities based on the country input of the user
-let inp=document.querySelector("input");
-let btn=document.querySelector("button");
-let list=document.querySelector("ul");
+// //Generate list of universities based on the country input of the user
+// let inp=document.querySelector("input");
+// let btn=document.querySelector("button");
+// let list=document.querySelector("ul");
 
-async function uniList(country)
-{
-    let url="http://universities.hipolabs.com/search?name=";
-    let res=await axios.get(url+country);
-    console.log(res.data);
-    return res.data;
-}
+// async function uniList(country)
+// {
+//     let url="http://universities.hipolabs.com/search?name=";
+//     let res=await axios.get(url+country);
+//     console.log(res.data);
+//     return res.data;
+// }
 
-btn.addEventListener("click", async ()=>{
-    list.innerText="";
-    let country=inp.value;
-    let res= await uniList(country);
+// btn.addEventListener("click", async ()=>{
+//     list.innerText="";
+//     let country=inp.value;
+//     let res= await uniList(country);
 
-    for(uni of res)
-    {
-        console.log(uni.name);
-        let li=document.createElement("li");
-        li.innerText=uni.name;
-        list.appendChild(li);
-    }
-})
+//     for(uni of res)
+//     {
+//         console.log(uni.name);
+//         let li=document.createElement("li");
+//         li.innerText=uni.name;
+//         list.appendChild(li);
+//     }
+// })
 
 
 

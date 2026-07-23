@@ -31,7 +31,7 @@
 // console.log(primary.concat(secondary));
 // console.log(secondary.concat(primary));
 // //Concat method doesnt change the structure of the array,the array stays the same
-// //if we want to concatenate and store the arrya we have to store it in another array
+// //if we want to concatenate and store the array we have to store it in another array
 // let colors=primary.concat(secondary);
 // console.log(colors);
 
@@ -59,16 +59,16 @@
 // months.splice(0,2,"july","june");
 // console.log(months);
 
-//Arrays are represented by their pointers in the memory, so two arrays holding the same elements will not be the same
-//because the two arrays will have different pointers pointing to the elements in the memory despite having the same elemenyts
-//if two arrays are equated,then they point to the same pointer in the memory,and hence can be said equal
+// Arrays are represented by their pointers in the memory, so two arrays holding the same elements will not be the same
+// because the two arrays will have different pointers pointing to the elements in the memory despite having the same elements
+// if two arrays are equated,then they point to the same pointer in the memory,and hence can be said equal
 
 // const array=[1,2,3];
 // console.log(array);
-//decalring array constant,makes the adddress point to the same memory address,and hence new array cannot be assigned
-//However array operations such as add,delete elements can be done
+// decalring array constant,makes the adddress point to the same memory address,and hence new array cannot be assigned
+// However array operations such as add,delete elements can be done
 
-//Printing tables using for loops
+// Printing tables using for loops
 // let a=prompt("Enter your number for printing tables");
 // let n=parseInt(a);
 
@@ -77,7 +77,7 @@
 //     console.log(i);
 // }
 
-//program to guess the fav movie using while loop and prompt
+// program to guess the fav movie using while loop and prompt
 // const favmov="interstellar";
 //  let guess=prompt("guess my favourite movie");
 // while((guess!=favmov) && (guess!="quit"))
@@ -91,9 +91,9 @@
 // else{
 //     console.log("you quit");
 // }
-//\
+// \
 
-//Program to traverse a nested array
+// Program to traverse a nested array
 // let arr=[["thor","spiderman","ironman"],["flash","batman","superman","batman"]];
 
 // for(let i=0;i<arr.length;i++)
@@ -105,7 +105,7 @@
 //     }
 // }
 
-//traversing using for of loop
+// traversing using for of loop
 
 // for(herolist of arr)
 // {
@@ -159,9 +159,9 @@
 
 // }
 
-//Object literal: analogous to a structure
+// Object literal: analogous to a structure
 
-//Object literal for a twitter post
+// Object literal for a twitter post
 
 // const post=
 // {
@@ -237,7 +237,7 @@
 // console.log(info[0]);
 // console.log(info[1].age);
 
-//Math objects and methods in javascript
+// Math objects and methods in javascript
 // console.log(Math.PI);
 // console.log(Math.E);
 // console.log(Math.abs(-7));
@@ -246,15 +246,15 @@
 // console.log(Math.ceil(-5.12));
 // console.log(Math.random());//generates a random number between 0 and 1 (1 exclusive)
 
-//generate a random number in the range of 1 and 10
+// generate a random number in the range of 1 and 10
 // console.log(Math.floor(Math.random()*10)+1);
 
-//here we are doing plus 1 at the end because the previous term generates only till 0 to 9
+// here we are doing plus 1 at the end because the previous term generates only till 0 to 9
 
-//genertae a random number in the range of 1 to 100
+// genertae a random number in the range of 1 to 100
 // console.log(Math.floor(Math.random()*100)+1);
 
-//Guessing game
+// Guessing game
 //  to guess a number within the user,s inputted max value range
 
 // let max=prompt("enter the maximum number");
@@ -281,10 +281,10 @@
     
 // }
 
-//generate a random number for dice roll
+// generate a random number for dice roll
 // console.log(Math.floor(Math.random()*6)+1);
 
-//function to roll a dice
+// function to roll a dice
 // function rolldice()
 // {
 //     console.log(Math.floor(Math.random()*6)+1);
@@ -314,9 +314,9 @@
 // }
 // console.log(sum(10,20));
 
-//higher order functions are the functions whicvh accept a function as a parameter or returns a function
+// higher order functions are the functions whicvh accept a function as a parameter or returns a function
 
-//Accept a  function as a parameter
+// Accept a  function as a parameter
 
 
 // let greet=function()
@@ -335,7 +335,7 @@
 
 // multiplegreet(greet,100);
 
-//Function that returns a function
+// Function that returns a function
 // function oddEvenFactory(request)
 // {
 //     if(request=="odd")
@@ -365,9 +365,9 @@
 // console.log(func(5));
 // console.log(func(6));
 
-//Methods are functions which perform operations on objects
+// Methods are functions which perform operations on objects
 
-//analogous to the Math object and the functions
+// analogous to the Math object and the functions
 // let calculator=
 // {
 //     add:function(a,b)
@@ -390,8 +390,8 @@
 // console.log(calculator.subtract(20,10));
 // console.log(calculator.multiply(20,50));
 
-//This keyword
-//"this " keyword refers to the current object
+// This keyword
+// "this " keyword refers to the current object
 // let obj=
 // {
 //     name:"harith",
@@ -424,11 +424,11 @@
 // console.log("hello2");
 // console.log("hello2");
 
-//arrow functions
-//arrow functions  are small compact dynamic functions with small callbacks written in lexical scope for a defenite purpose
-//this differs with the normal functions in the accessibility of object literals
-//in arrow functions we cannot access the members of any object literal using the "this" keyword
-//all the inbuilt function we use are the functions defined in thw window object
+// arrow functions
+// arrow functions  are small compact dynamic functions with small callbacks written in lexical scope for a defenite purpose
+// this differs with the normal functions in the accessibility of object literals
+// in arrow functions we cannot access the members of any object literal using the "this" keyword
+// all the inbuilt function we use are the functions defined in thw window object
 
 // const sum=(a,b)=>
 // {
@@ -473,25 +473,25 @@
 // console.log(student.getMarks());
 
 
-//setTimeout function
-//it is used to delay the execution of  afunction by some time
-//the first parameter is the callback function whose execution should be delayed,
-//the second parameter is the time duration after which the function has to be executed in ms, 1000ms=1s
+// setTimeout function
+// it is used to delay the execution of  afunction by some time
+// the first parameter is the callback function whose execution should be delayed,
+// the second parameter is the time duration after which the function has to be executed in ms, 1000ms=1s
 
 // console.log("hi there!!");
 // setTimeout(()=>{console.log("Harith")},4000);
 
 // console.log("My name is ");
 
-//setInterval function
-//it is used to repeat a function after some defenite interval of time again and again
+// setInterval function
+// it is used to repeat a function after some defenite interval of time again and again
 
 // console.log("hi there!!");
 // let id=setInterval(()=>{console.log("Harith")},2000);
-//this runs indefinitely
-//to stop it:
-//every function call is run with an id attached to it
-//to stop it, type clearInterval(id) in the console
+// this runs indefinitely
+// to stop it:
+// every function call is run with an id attached to it
+// to stop it, type clearInterval(id) in the console
 
 // let id2=setInterval(()=>{console.log("DN")},3000);
 
@@ -511,8 +511,8 @@
 // console.log(isEven(2));
 
 // Array methods
-//forEach is a method which iterates through all the elements present in the array similar to a for loop
-//forEach function takes a function aa a parameter to perform some operation on each array element
+// forEach is a method which iterates through all the elements present in the array similar to a for loop
+// forEach function takes a function aa a parameter to perform some operation on each array element
 // let arr=[1,2,3,4,5];
 // function print(n){
 //     console.log(n);
@@ -535,9 +535,9 @@
 // })
 
 //  Map function
-//map function creates an array of the same size and stores the returnmed value of the function passed in the array
-//If the paarmeter function doesnt return any value,the new array values will be undefined
-//the function which is passsed as a parameter isd called as the callback function
+// map function creates an array of the same size and stores the returnmed value of the function passed in the array
+// If the paarmeter function doesnt return any value,the new array values will be undefined
+// the function which is passsed as a parameter isd called as the callback function
 
 // let cgpa=arr.map((ele)=>
 // {
@@ -547,9 +547,9 @@
 // )
 // console.log(cgpa);
 
-//Filter function
-//return an array of elements which are elements of the passed array but gets stored based on a condition
-//the callback function returns a value true or false based on which the element gets stored
+// Filter function
+// return an array of elements which are elements of the passed array but gets stored based on a condition
+// the callback function returns a value true or false based on which the element gets stored
 
 // let numbers=[1,2,3,4,5,6,7,8,9,10,11];
 
@@ -559,8 +559,8 @@
 // const odd=numbers.filter((el)=>{return !(el%2==0)});
 // console.log(odd);
 
-//Every method
-//returns true if all the elements in the array pass certain condition,else false
+// Every method
+// returns true if all the elements in the array pass certain condition,else false
 // let arr=[2,4,6,8];
 // console.log(arr.every(ele=>ele%2==0));
 // let arr2=[2,4,6,8,9];
@@ -570,9 +570,9 @@
 
 // console.log(arr2.some(ele=>ele%2==0));
 
-//Reduce function
-//returns a single value after performing some function with the array
-//it return the accumulator after every iteration to the next iteration and in the last call returns the final value of the accumulator
+// Reduce function
+// returns a single value after performing some function with the array
+// it return the accumulator after every iteration to the next iteration and in the last call returns the final value of the accumulator
 
 // let num=[1,2,3,4,5,6,7,8,9,10];
 // let sum=num.reduce((res,el)=>res+el);
@@ -588,7 +588,7 @@
 // })
 // console.log(max);
 
-//Default parameters for a function
+// Default parameters for a function
 
 // function sum(a,b=1)
 // {
@@ -597,11 +597,11 @@
 // console.log(sum(1,2));
 // console.log(sum(2));
 
-//Spread
-//Iterables the structures which can be iterated to access each elemet of the structure
-//Arrays and strings are iterables
-//spread function spreads all the values in the iterable as individual values spread out
-//spread function is specified by 3 dots before the structure name
+// Spread
+// Iterables the structures which can be iterated to access each elemet of the structure
+// Arrays and strings are iterables
+// spread function spreads all the values in the iterable as individual values spread out
+// spread function is specified by 3 dots before the structure name
 
 // console.log(Math.min(1,2,3,4,5,6,7,8,9));
 // let nums=[1,2,3,4,5,6,7,8,9];
@@ -614,7 +614,7 @@
 // let numss=[...odd,...even];
 // console.log(numss);
 
-//can be used to iterate thru object literals also
+// can be used to iterate thru object literals also
 // let obj=
 // {
 //     email:"ironman@gmail.com",
@@ -623,12 +623,12 @@
 // let objCopy={...obj,id:"123",country:"india"}
 // console.log(objCopy);
 
-//rest 
-//rest is the opposite of spread
-//if multiple values are passed to a function as aparamterees with no definite limit
-//all those arguments can be stored in a array using rest,hence there can no limit to the argumentys entered by the user
+// rest 
+// rest is the opposite of spread
+// if multiple values are passed to a function as aparamterees with no definite limit
+// all those arguments can be stored in a array using rest,hence there can no limit to the argumentys entered by the user
 
-//copy of Math.min function using rest,it is similar to spread and implemeented using 3 dots
+// copy of Math.min function using rest,it is similar to spread and implemeented using 3 dots
 // function min(...args)
 // {
 //     //the arguments array is used
@@ -642,7 +642,7 @@
 // console.log(min(90,56,108,-34));
 // console.log(min(1,2,3,4,5,6,7,8,9));
 
-//Destructuring array
+// Destructuring array
 // let player=["steve","bruce","tony","stark","peter"];
 // //array i scopied into different variables hence getting destructured
 // let [winner,runner,...others]=player;
@@ -661,7 +661,7 @@
 // //the parameters name and age are fetched from object and are stored into variables "namee" and "agee"
 // console.log(namee,agee);
 
-//sqaure and sum the array elements and then find the avg
+// sqaure and sum the array elements and then find the avg
 // function sqsum(arr)
 // {
 //     return arr.reduce((sum,ele)=>

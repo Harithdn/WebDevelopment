@@ -1,24 +1,15 @@
 
 import './App.css'
-import Title from './Title'
 import Description from './Description';
-
-
-
+import ProductTab from './ProductTab';
+import Button from './Button';
+import Form from './Form';
 
 function App() {
-
-  return(
+  return (
     <>
-
-     <Title/>
-     <Description/>
+    <Form />
     </>
-     
-    
   );
-
 }
-
-
 export default App

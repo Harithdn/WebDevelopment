@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.numbox{
+    @apply bg-red-500 m-4 text-white text-center;
+}

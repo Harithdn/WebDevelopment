@@ -1,5 +1,5 @@
-/* :root {
-  --text: #6b6375;
+:root {
+  --text: black;
   --text-h: #08060d;
   --bg: #fff;
   --border: #e5e4e7;
@@ -32,8 +32,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
+    --text: black;
+    --text-h:black;
     --bg: white;
     --border: #2e303a;
     --code-bg: #1f2028;
@@ -108,8 +108,4 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
-} */
-
-body{
-  align-items: center;
 }

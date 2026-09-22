@@ -1,7 +1,6 @@
-function Description()
+function Description({description})
 {
-  let name="Harith"
-  return <p>I am {name}! I'm {19+1}</p>
+  return <p>{description}</p>
 }
 
 export default Description
